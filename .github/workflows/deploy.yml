@@ -1,0 +1,29 @@
+name: Deploy to Domeneshop
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy via FTP
+        uses: sand4rt/ftp-deployer@v1.8
+        with:
+          sftp: false
+          host: ${{ secrets.FTP_SERVER }}
+          port: 21
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          remote_folder: /www
+          local_folder: ./
+          cleanup: false
+          passive: true
+          exclude: '[".git/**", ".github/**", ".vscode/**", ".gitignore", "README.md", ".DS_Store", "**/.DS_Store", ".gstack/**", ".idea/**"]'
