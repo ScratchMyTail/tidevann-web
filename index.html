@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tidevann App - Norges beste app for tidevann og fiskelykke</title>
+  <meta name="description" content="Tidevann er Norges mest populære app for å sjekke flo og fjære. Få nøyaktige tidevannsdata, månefase og fiskelykke for hele Norge.">
+  <meta name="keywords" content="tidevann, flo og fjære, fiskelykke, norsk fisking, tidevannsapp, norsk app, fisking app, når er det flo, når er det fjære, huggtabell, sjøkartnull, referansenivåer, enkel app, appstore tidevann, tidevann app store, tidevann google play, tidevann android, tidevann app, tidevann ios, tidevann iphone, tidevann android">
+  <meta name="author" content="Tidevann.app">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Tidevann - Helt enkelt nær deg.">
+  <meta property="og:description" content="Tidevann er Norges mest populære app for tidevann, flo og fjære. Få nøyaktige tidevannsdata, månefase og fiskelykke for hele Norge.">
+  <meta property="og:image" content="https://tidevann.app/appicon.png">
+  <meta property="og:url" content="https://tidevann.app">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://tidevann.app">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWMR71X9FQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    // Default to denied consent until user accepts
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied'
+    });
+    
+    // Initialize GA with your ID
+    gtag('config', 'G-WWMR71X9FQ', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Tidevann",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "WeatherApp",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "NOK"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "50000"
+      },
+      "description": "Tidevann er Norges mest populære app for tidevann, flo og fjære. Få nøyaktige tidevannsdata, månefase og fiskelykke for hele Norge.",
+      "screenshot": [
+        "https://tidevann.app/screenshots/Simulator Screenshot - iPhone 16 Pro Max - 2025-03-30 at 21.31.59.png",
+        "https://tidevann.app/screenshots/Simulator Screenshot - iPhone 16 Pro Max - 2025-03-30 at 21.32.11.png",
+        "https://tidevann.app/screenshots/Simulator Screenshot - iPhone 16 Pro Max - 2025-06-13 at 12.24.38.png",
+        "https://tidevann.app/screenshots/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-18 at 09.36.52.png"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-logo">
+        <img src="appicon.png" alt="Tidevann App" id="nav-logo">
+      </div>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Funksjoner</a>
+        <a href="#screenshots">Skjermbilder</a>
+        <a href="#reviews">Tilbakemeldinger</a>
+        <a href="#tide-info">Data</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <img src="appicon.png" alt="Tidevann App Icon">
+    <h1>Tidevann</h1>
+    <div class="tagline-container">
+      <p class="tagline active">Din daglige oversikt over flo, fjære og fiskeforhold</p>
+      <p class="tagline">Havets puls – på telefonen din.</p>
+      <p class="tagline">Tidevann, månefase og fiskelykke – samlet.</p>
+      <p class="tagline">For deg som følger naturens klokke.</p>
+      <p class="tagline">Nøyaktig tidevann. Der du er.</p>
+      <p class="tagline">Flo og fjære – alltid tilgjengelig.</p>
+    </div>
+    <div class="app-store-buttons" id="download">
+      <a href="https://apps.apple.com/no/app/tidevann/id564181094" target="_blank" class="app-store">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        App Store
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=appsnor.no.tidevann&hl=no" target="_blank" class="play-store">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16.61 15.15c-.46 0-.84-.37-.84-.83s.37-.84.84-.84c.46 0 .84.37.84.84s-.37.83-.84.83m-9.2 0c-.46 0-.84-.37-.84-.83s.37-.84.84-.84c.46 0 .84.37.84.84s-.37.83-.84.83m9.5-4.27l2.31-3.96c.13-.22.05-.5-.17-.63-.22-.13-.5-.05-.63.17L16.09 10.4c-1.3-.56-2.76-.87-4.29-.87-1.53 0-2.99.31-4.29.87L5.18 6.46c-.13-.22-.41-.3-.63-.17-.22.13-.3.41-.17.63l2.31 3.96C3.82 12.57 2 15.55 2 19h20c0-3.45-1.82-6.43-5.09-8.12"/>
+        </svg>
+        Google Play
+      </a>
+    </div>
+  </div>
+
+  <section class="downloads-counter">
+    <div class="counter-container">
+      <div class="counter-block">
+        <div class="counter-stats">
+          <div class="counter-stat">
+            <span class="material-icons counter-icon">download</span>
+            <div class="counter">>50 000</div>
+            <div class="counter-label">Antall nedlastinger</div>
+          </div>
+          <div class="counter-divider vertical"></div>
+          <div class="counter-stat">
+            <span class="material-icons counter-icon">group</span>
+            <div class="counter">>5 000</div>
+            <div class="counter-label">Aktive brukere i uka</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Hvorfor bruke Tidevann?</h2>
+    <ul>
+      <li>
+        <span class="material-icons">waves</span>
+        Flo og fjære for hele Norge i opp til 60 dager
+      </li>
+      <li>
+        <span class="material-icons">dark_mode</span>
+        Oversiktlig månefase og status
+      </li>
+      <li>
+        <span class="material-icons">location_on</span>
+        Bruk din egen lokasjon eller søk etter et sted
+      </li>
+      <li>
+        <span class="material-icons">phishing</span>
+        Huggtabell hjelper deg med fisket
+      </li>
+      <li>
+        <span class="material-icons">calendar_month</span>
+        Sjøkartnull og referansenivåer for valgt sted
+      </li>
+      <li>
+        <span class="material-icons">sunny</span>
+        Soloppgang og solnedgang for valgt sted
+      </li>
+      <li>
+        <span class="material-icons">ios_share</span>
+        Del tidevann med andre
+      </li>
+      <li>
+        <span class="material-icons">record_voice_over</span>
+        Bruk Siri for å finne ut når det er flo
+      </li>
+    </ul>
+  </section>
+
+  <section class="screenshots" id="screenshots">
+    <h2>Appen i aksjon</h2>
+    <div class="phone-frame">
+      <div class="phone-screen">
+        <img src="screenshots/Simulator Screenshot - iPhone 16 Pro Max - 2025-03-30 at 21.31.59.png" alt="Tidevann App Screenshot 1" class="active">
+        <img src="screenshots/Simulator Screenshot - iPhone 16 Pro Max - 2025-04-09 at 09.55.55.png" alt="Tidevann App Screenshot 2">
+        <img src="screenshots/Simulator Screenshot - iPhone 16 Pro Max - 2025-06-13 at 12.24.38.png" alt="Tidevann App Screenshot 3">
+        <img src="screenshots/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-18 at 09.36.52.png" alt="Tidevann App Screenshot 4">
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h2>Hva brukerne sier</h2>
+    <button class="review-nav prev">
+      <span class="material-icons">chevron_left</span>
+    </button>
+    <button class="review-nav next">
+      <span class="material-icons">chevron_right</span>
+    </button>
+    <div class="reviews-content">
+      <div class="review-container">
+        
+        <div class="review active">
+          <div class="review-text">"Dette er akkurat det jeg trenger til å følge med på tidevannet. Den stemmer veldig godt i de områdene jeg fisket etter sjøørret og havabbor. Ikke masse ekstra, enkelt og informativ."</div>
+          <div class="review-author">- Eivind B.</div>
+        </div>
+        <div class="review">
+          <div class="review-text">"Rent og oversiktlig design, anbefales 👍🏻 Den beste i AppStore ☝🏻"</div>
+          <div class="review-author">- Vera O.</div>
+        </div>
+        <div class="review">
+          <div class="review-text">"Enkel og grei. Fungerer meget godt så lenge du tillater appen å vite hvor du er..."</div>
+          <div class="review-author">- Kai K.</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <section class="tide-info" id="tide-info">
+    <h2>Tidevannsdata</h2>
+    <div class="tide-info-content">
+      <div class="tide-info-block">
+        <p>Tidevann-appen benytter data fra Kartverket, som overvåker havnivået ved hjelp av tre hovedmetoder:</p>
+        <p><b>1. Vannstandsmålere:</b> Disse måler havoverflatens høyde i forhold til faste punkter på land.</p>
+        <p><b>2. Satellittaltimetri:</b> Satellitter sender radarsignaler mot jorden og måler tiden det tar for signalene å reflekteres tilbake, noe som gir nøyaktige data om havnivået.</p>
+        <p><b>3. Landhevingsmålinger:</b> Ved hjelp av GNSS-satellitter overvåkes landets vertikale bevegelser for å korrigere havnivådataene.</p>
+        <p>Disse metodene sikrer at appen gir pålitelige og oppdaterte tidevannsdata basert på presise målinger.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <h2>Kontakt oss</h2>
+    <div class="contact-content">
+      <div class="contact-block">
+        <span class="material-icons">email</span>
+        <h3>E-post</h3>
+        <p>Har du spørsmål eller tilbakemeldinger? Send oss en e-post:</p>
+        <a href="mailto:post@tidevann.app" class="email-link">post@tidevann.app</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Tidevann.app – All rights reserved.
+  </footer>
+  
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-consent" class="cookie-banner">
+    <div class="cookie-content">
+      <p>Vi bruker cookies og Google Analytics for å forbedre din opplevelse på nettstedet. Ved å fortsette å bruke nettstedet, godtar du vår <a href="/privacy">personvernerklæring</a>.</p>
+      <div class="cookie-buttons">
+        <button id="accept-cookies" class="cookie-button accept">Aksepter</button>
+        <button id="reject-cookies" class="cookie-button reject">Avvis</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="analytics.js"></script>
+  <script src="cookie-consent.js"></script>
+</body>
+</html>
